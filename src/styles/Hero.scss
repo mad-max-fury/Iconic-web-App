@@ -1,0 +1,197 @@
+@import "../config/mixins.scss";
+@import "../config/variables.scss";
+@import "../config/config.scss";
+.slider__main {
+  height: 72vh;
+  width: 100%;
+  // border: 1px solid red;
+  overflow: hidden;
+  margin-bottom: 6vh;
+
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  // gap: 1rem;
+  & > div {
+    width: 100% !important;
+    height: 72vh;
+
+    .slider__main__slide {
+      height: 70vh;
+
+      display: flex;
+      flex-direction: row !important;
+
+      &__image {
+        width: 45%;
+        height: 90%;
+        align-self: flex-end;
+        display: flex;
+        @media screen and (max-width: 428px) {
+          @media screen and (max-width: 428px) {
+            width: 100%;
+            // text-align: center;
+          }
+        }
+        img {
+          width: 95%;
+          height: 100%;
+          border: 0;
+          outline: 0;
+          margin: auto;
+          position: relative;
+          top: 5%;
+          box-shadow: 0px 17px 26px 9px rgba(226, 150, 150, 0.75);
+          -webkit-box-shadow: 0px 17px 26px 9px rgba(226, 150, 150, 0.75);
+          -moz-box-shadow: 0px 17px 26px 9px rgba(226, 150, 150, 0.75);
+          &:hover {
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+            top: -5%;
+            height: 90%;
+          }
+        }
+      }
+      &__description {
+        width: 58%;
+        height: 90%;
+        align-self: flex-end;
+        padding: 0 0.5rem;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1rem;
+        .title {
+          color: darken($color: darken($color: #fff, $amount: 0), $amount: 20);
+        }
+        @media screen and (max-width: 428px) {
+          display: none;
+        }
+        .rating {
+          color: var(--clr-primary-100);
+          font-size: 19px;
+          font-weight: bold;
+          &__Amount {
+            color: darken($color: goldenrod, $amount: 10);
+          }
+        }
+        p {
+          // border: 1px solid green;
+          color: darken($color: #fff, $amount: 5) !important;
+          overflow: hidden;
+          height: 24vh;
+          width: 100%;
+        }
+        .addToCart {
+          @include ctaButton;
+          text-transform: uppercase;
+          align-self: flex-start;
+          cursor: pointer;
+          @media screen and (max-width: 428px) {
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+  .slideholder1 {
+    background-color: lighten($color: rgb(3, 19, 42), $amount: 10);
+    .slider__main__slide {
+      &__image {
+        img {
+          box-shadow: 0px 17px 26px 9px
+            lighten($color: rgb(3, 19, 42), $amount: 10);
+          -webkit-box-shadow: 0px 17px 26px 9px
+            lighten($color: rgb(3, 19, 42), $amount: 10);
+          -moz-box-shadow: 0px 17px 26px 9px
+            lighten($color: rgb(3, 19, 42), $amount: 10);
+        }
+      }
+      &__description {
+        p {
+          color: darken($color: #fff, $amount: 5) !important;
+        }
+      }
+    }
+  }
+  .slideholder2 {
+    background-color: lighten($color: rgb(220, 83, 88), $amount: 10);
+    .slider__main__slide {
+      &__image {
+        img {
+          box-shadow: 0px 17px 26px 9px rgba(226, 150, 150, 0.75);
+          -webkit-box-shadow: 0px 17px 26px 9px rgba(226, 150, 150, 0.75);
+          -moz-box-shadow: 0px 17px 26px 9px rgba(226, 150, 150, 0.75);
+        }
+      }
+      &__description {
+        p {
+          color: darken($color: #fff, $amount: 5) !important;
+        }
+      }
+    }
+  }
+  .slideholder3 {
+    background-color: lighten($color: rgb(98, 22, 40), $amount: 10);
+    .slider__main__slide {
+      &__image {
+        img {
+          box-shadow: 0px 17px 26px 9px
+            lighten($color: rgb(98, 22, 40), $amount: 10);
+          -webkit-box-shadow: 0px 17px 26px 9px
+            lighten($color: rgb(98, 22, 40), $amount: 10);
+          -moz-box-shadow: 0px 17px 26px 9px
+            lighten($color: rgb(98, 22, 40), $amount: 10);
+        }
+      }
+      &__description {
+        p {
+          color: darken($color: #fff, $amount: 5) !important;
+        }
+      }
+    }
+  }
+  .slideholder4 {
+    background-color: lighten($color: rgb(38, 34, 33), $amount: 10);
+    .slider__main__slide {
+      &__image {
+        img {
+          box-shadow: 0px 17px 26px 9px
+            lighten($color: rgb(38, 34, 33), $amount: 10);
+          -webkit-box-shadow: 0px 17px 26px 9px
+            lighten($color: rgb(38, 34, 33), $amount: 10);
+          -moz-box-shadow: 0px 17px 26px 9px
+            lighten($color: rgb(38, 34, 33), $amount: 10);
+        }
+      }
+      &__description {
+        p {
+          color: darken($color: #fff, $amount: 5) !important;
+        }
+      }
+    }
+  }
+  .slideholder5 {
+    background-color: lighten($color: rgb(136, 97, 144), $amount: 10);
+    .slider__main__slide {
+      &__image {
+        img {
+          box-shadow: 0px 17px 26px 9px
+            lighten($color: rgb(136, 97, 144), $amount: 10);
+          -webkit-box-shadow: 0px 17px 26px 9px
+            lighten($color: rgb(136, 97, 144), $amount: 10);
+          -moz-box-shadow: 0px 17px 26px 9px
+            lighten($color: rgb(136, 97, 144), $amount: 10);
+        }
+      }
+      &__description {
+        p {
+          color: darken($color: #fff, $amount: 5) !important;
+        }
+      }
+    }
+  }
+}
+
+.slick-slider {
+  border: none !important;
+}

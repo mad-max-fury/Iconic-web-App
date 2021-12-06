@@ -1,0 +1,135 @@
+:root {
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --outline-hover: 0.6rem solid var(--black);
+}
+
+:root {
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --ff-main: "Josefin Sans", sans-serif;
+  --transition-time: 175ms;
+}
+
+:root {
+  --clr-primary-100: #daa520;
+  --clr-textcolor-100: #000000;
+  --clr-textcolor-200: #484b6a;
+  --clr-background-100: #ffffff;
+  --clr-background-200: #000000;
+  --clr-background-300: #e6e6e6;
+}
+
+.signIn {
+  position: fixed;
+  top: 10%;
+  right: 0%;
+  width: 95%;
+  height: 90%;
+  left: 0;
+  margin: auto;
+  background-color: #fff;
+  opacity: 1;
+  z-index: 10000;
+  display: grid;
+  transition: all 0.8s ease-in-out;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: -4px 2px 28px 0px rgba(128, 128, 128, 0.75);
+  -webkit-box-shadow: -4px 2px 28px 0px rgba(128, 128, 128, 0.75);
+  -moz-box-shadow: -4px 2px 28px 0px rgba(128, 128, 128, 0.75);
+}
+@media screen and (min-width: 769px) {
+  .signIn {
+    align-self: center;
+    width: 30%;
+    transition: all 0.8s ease-in-out;
+  }
+}
+.signIn span {
+  color: var(--clr-primary-100);
+}
+.signIn span a {
+  text-decoration: none;
+  color: var(--clr-primary-100);
+}
+.signIn .SignInCloseBtn {
+  text-align: end;
+  font-size: 2.5rem;
+  font-weight: 1.25rem;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.signIn__heading {
+  text-align: center;
+  font-size: large;
+}
+.signIn__formInput {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+.signIn__formInput input {
+  border: 1px solid var(--clr-primary-100);
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: 0;
+  padding-left: 0.4rem;
+  color: var(--clr-textcolor-200);
+}
+@media screen and (min-width: 769px) {
+  .signIn__formInput input {
+    align-self: center;
+    cursor: pointer;
+    width: 80%;
+  }
+}
+.signIn__formInput input::-moz-placeholder {
+  color: var(--clr-textcolor-200);
+  padding-left: 0.4rem;
+}
+.signIn__formInput input:-ms-input-placeholder {
+  color: var(--clr-textcolor-200);
+  padding-left: 0.4rem;
+}
+.signIn__formInput input::placeholder {
+  color: var(--clr-textcolor-200);
+  padding-left: 0.4rem;
+}
+.signIn .login,
+.signIn .facebook-login {
+  align-self: center;
+  margin: auto;
+}
+.signIn .login a,
+.signIn .facebook-login a {
+  align-self: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  letter-spacing: 1px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: var(--clr-primary-100);
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.signIn .facebook-login a {
+  background-color: #000;
+}
+.signIn p {
+  align-self: center;
+  margin: auto;
+  text-align: center;
+}/*# sourceMappingURL=SignIn.css.map */

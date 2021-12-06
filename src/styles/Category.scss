@@ -1,0 +1,23 @@
+@import "../config/mixins.scss";
+@import "../config/variables.scss";
+@import "../config/config.scss";
+
+.categories {
+  @include boxView;
+
+  margin: auto 0;
+  & > h3 {
+    text-align: center;
+    border-bottom: 2px solid var(--clr-primary-100);
+    color: darken($color: #484b6a, $amount: 10);
+  }
+  // & select {
+  // border: 1px solid green;
+
+  // &:hover {
+  //   transition: color 0.5s ease-in-out, padding 0.5s ease-in-out;
+  //   color: var(--clr-primary-100);
+  //   padding: 0.5rem;
+  // }
+  // }
+}

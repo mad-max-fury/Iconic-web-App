@@ -1,0 +1,33 @@
+$font-weights: (
+  "normal": 400,
+  "bold": 700,
+);
+
+$breakpoints: (
+  "small": 35em,
+);
+
+$font-families: (
+  "main": "Josefin Sans",
+);
+$colors: (
+  "primary": (
+    "100": #daa520,
+  ),
+  "textcolor": (
+    "100": #000000,
+    "200": #484b6a,
+  ),
+  "background": (
+    "100": #ffffff,
+    "200": #000000,
+    "300": #e6e6e6,
+  ),
+);
+
+:root {
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --outline-hover: 0.6rem solid var(--black);
+}

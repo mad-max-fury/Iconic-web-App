@@ -1,0 +1,72 @@
+@import "../config/mixins.scss";
+@import "../config/variables.scss";
+@import "../config/config.scss";
+
+.cart_totals {
+  @include boxView;
+  box-shadow: -2px -4px 8px rgba(0, 0, 0, 0.1), 2px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 6px solid #fff;
+  height: fit-content;
+  width: fit-content;
+  padding: 1.5rem;
+  .cart-totals-inner {
+    @media screen and (max-width: 768px) {
+      width: 76vw;
+    }
+    width: 20vw;
+
+    & > h2 {
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--clr-primary-100);
+    }
+    .shop_table {
+      display: table;
+      text-indent: initial;
+
+      vertical-align: baseline;
+      font: inherit;
+      width: 100%;
+      tbody {
+        display: table-row-group;
+
+        tr {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+          border-bottom: 2px solid #fff;
+          padding: 0.5rem 0;
+          &:last-of-type {
+            border-bottom: none;
+          }
+          td[data-title="Unique Number"] {
+            font-size: 1rem;
+            font-weight: bolder;
+            color: var(--clr-primary-100);
+          }
+          td[data-title="Total"] {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color: var(--clr-primary-100);
+          }
+          td[data-title="Subtotal"] {
+            color: var(--clr-textcolor-200);
+          }
+        }
+      }
+    }
+  }
+}
+
+.proceed-to-checkout {
+  width: 100%;
+  background-color: var(--clr-primary-100);
+  padding: 1rem 0;
+  text-align: center;
+  a {
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+  }
+}

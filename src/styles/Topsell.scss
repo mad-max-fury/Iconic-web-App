@@ -1,0 +1,120 @@
+@import "../config/mixins.scss";
+@import "../config/variables.scss";
+@import "../config/config.scss";
+.topsell {
+  height: fit-content;
+  width: 90vw;
+  // margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 2rem auto;
+  // padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  &__label {
+    height: 3.5rem;
+    width: 100%;
+    background-color: rgba(235, 183, 19, 0.77);
+    border-radius: inherit;
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #fff;
+
+    span {
+      font-weight: bold;
+      text-shadow: 5px 5px 6px rgba(235, 183, 19, 0.77);
+    }
+  }
+
+  &__products__holder {
+    @media screen and (max-width: 768px) {
+      align-items: center;
+
+      justify-content: center;
+    }
+    height: fit-content;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    &__product {
+      margin-top: 0.5rem;
+      width: 18rem;
+      height: 22rem;
+      &:hover {
+        border-radius: 8px;
+        margin-top: unset;
+        width: 19rem;
+        height: 24rem;
+        transition: all 0.4s;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(235, 183, 19, 0.77);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(235, 183, 19, 0.77);
+        box-shadow: 0px 0px 10px 0px rgba(235, 183, 19, 0.77);
+        cursor: pointer;
+        .image {
+          height: 65%;
+        }
+      }
+      .image {
+        height: 60%;
+        width: 100%;
+
+        img {
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+        }
+      }
+      .description {
+        padding: 0.3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .product-name {
+          height: 2rem;
+          small {
+            height: 2rem;
+            color: var(--clr-textcolor-200);
+            font-size: 17px;
+            text-overflow: ellipsis;
+            width: 16rem;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+
+            text-align: center;
+            white-space: nowrap;
+            color: #000;
+          }
+        }
+        .price {
+          font-weight: bold;
+          font-size: 20px;
+        }
+        .addToCartBtn {
+          text-transform: uppercase;
+          width: fit-content;
+          height: fit-content;
+          padding: 0.8rem 2rem;
+          margin: 0.5rem 0;
+          align-self: flex-start;
+          background-color: rgba(235, 183, 19, 0.77);
+          color: white;
+          border-radius: 10px;
+          font-weight: lighter;
+          z-index: 5;
+          &:hover {
+            transition: background 0.3s ease-in;
+            background-color: #948434;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

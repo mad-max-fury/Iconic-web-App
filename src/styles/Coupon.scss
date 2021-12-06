@@ -1,0 +1,54 @@
+@import "../config/mixins.scss";
+@import "../config/variables.scss";
+@import "../config/config.scss";
+
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .couponWrapper {
+    @include boxView;
+    box-shadow: -2px -4px 8px rgba(0, 0, 0, 0.1), 2px 4px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    height: 3rem;
+    padding: 0;
+    &__couponInnerWrapper {
+      width: 25vw;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      // border: 1px solid green;
+      height: inherit;
+
+      border-radius: inherit;
+      // padding: ;
+      display: flex;
+      justify-content: space-between;
+      & > button {
+        @include ctaButton;
+        height: 100%;
+        width: fit-content;
+        text-transform: uppercase;
+        color: #fff;
+        cursor: pointer;
+        @media screen and (max-width: 768px) {
+          width: fit-content;
+        }
+      }
+      & > input {
+        padding-left: 0.4rem;
+      }
+    }
+  }
+}
+
+button[name="update_cart"] {
+  @include ctaButton;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: -2px -4px 8px rgba(0, 0, 0, 0.1), 2px 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,13 @@
+@import "../config/mixins.scss";
+@import "../config/variables.scss";
+@import "../config/config.scss";
+
+main.cate {
+  @include boxView;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+  margin-bottom: 2.5%;
+}

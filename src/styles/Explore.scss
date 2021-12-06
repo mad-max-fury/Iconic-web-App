@@ -1,0 +1,83 @@
+@import "../config/mixins.scss";
+@import "../config/variables.scss";
+@import "../config/config.scss";
+.explore {
+  height: fit-content;
+  width: 90vw;
+  // margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 2rem auto;
+  // padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  &__label {
+    height: 3.5rem;
+    width: 100%;
+    background-color: rgba(235, 183, 19, 0.77);
+    border-radius: inherit;
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fff;
+
+    span {
+      font-weight: bold;
+      text-shadow: 5px 5px 6px rgba(235, 183, 19, 0.77);
+    }
+  }
+
+  &__products__holder {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(1, auto);
+    padding-left: 1.5rem;
+    @media screen and (max-width: 1024px) {
+      overflow: scroll;
+    }
+    & > div {
+      display: flex;
+      flex-direction: column;
+      .explore__products__holder__product {
+        height: 12rem;
+        width: 12.3rem;
+        img {
+          height: 100%;
+          width: 100%;
+          border: 0;
+          outline: 0;
+        }
+        .seemore {
+          position: relative;
+          width: 100%;
+          background-color: rgb(217, 165, 32);
+          color: #fff;
+          top: -23.95%;
+          border-radius: 8px;
+          text-align: center;
+          padding: 1rem;
+          display: none;
+          font-size: large;
+        }
+        &:hover {
+          transition: all 0.4s ease-in-out;
+          height: 15rem;
+          width: 14.5rem;
+          border-radius: 8px;
+          -webkit-box-shadow: 0px 0px 10px 0px rgba(235, 183, 19, 0.77);
+          -moz-box-shadow: 0px 0px 10px 0px rgba(235, 183, 19, 0.77);
+          box-shadow: 0px 0px 10px 0px rgba(235, 183, 19, 0.77);
+          cursor: pointer;
+
+          .seemore {
+            transition: all 0.9s ease-in-out;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

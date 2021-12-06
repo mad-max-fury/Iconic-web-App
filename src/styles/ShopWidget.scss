@@ -1,0 +1,19 @@
+@import "../config/mixins.scss";
+@import "../config/variables.scss";
+@import "../config/config.scss";
+
+.filterItems {
+  @include boxView;
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 300px);
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  @media screen and (max-width: 900px) {
+    width: 90%;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+  }
+}

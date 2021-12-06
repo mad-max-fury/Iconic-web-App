@@ -1,0 +1,141 @@
+:root {
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --outline-hover: 0.6rem solid var(--black);
+}
+
+:root {
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --ff-main: "Josefin Sans", sans-serif;
+  --transition-time: 175ms;
+}
+
+:root {
+  --clr-primary-100: #daa520;
+  --clr-textcolor-100: #000000;
+  --clr-textcolor-200: #484b6a;
+  --clr-background-100: #ffffff;
+  --clr-background-200: #000000;
+  --clr-background-300: #e6e6e6;
+}
+
+.topsell {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 90vw;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+.topsell__label {
+  height: 3.5rem;
+  width: 100%;
+  background-color: rgba(235, 183, 19, 0.77);
+  border-radius: inherit;
+  border-bottom-left-radius: unset;
+  border-bottom-right-radius: unset;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #fff;
+}
+.topsell__label span {
+  font-weight: bold;
+  text-shadow: 5px 5px 6px rgba(235, 183, 19, 0.77);
+}
+.topsell__products__holder {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .topsell__products__holder {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.topsell__products__holder__product {
+  margin-top: 0.5rem;
+  width: 18rem;
+  height: 22rem;
+}
+.topsell__products__holder__product:hover {
+  border-radius: 8px;
+  margin-top: unset;
+  width: 19rem;
+  height: 24rem;
+  transition: all 0.4s;
+  box-shadow: 0px 0px 10px 0px rgba(235, 183, 19, 0.77);
+  cursor: pointer;
+}
+.topsell__products__holder__product:hover .image {
+  height: 65%;
+}
+.topsell__products__holder__product .image {
+  height: 60%;
+  width: 100%;
+}
+.topsell__products__holder__product .image img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.topsell__products__holder__product .description {
+  padding: 0.3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.topsell__products__holder__product .description .product-name {
+  height: 2rem;
+}
+.topsell__products__holder__product .description .product-name small {
+  height: 2rem;
+  color: var(--clr-textcolor-200);
+  font-size: 17px;
+  text-overflow: ellipsis;
+  width: 16rem;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  color: #000;
+}
+.topsell__products__holder__product .description .price {
+  font-weight: bold;
+  font-size: 20px;
+}
+.topsell__products__holder__product .description .addToCartBtn {
+  text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.8rem 2rem;
+  margin: 0.5rem 0;
+  align-self: flex-start;
+  background-color: rgba(235, 183, 19, 0.77);
+  color: white;
+  border-radius: 10px;
+  font-weight: lighter;
+  z-index: 5;
+}
+.topsell__products__holder__product .description .addToCartBtn:hover {
+  transition: background 0.3s ease-in;
+  background-color: #948434;
+  cursor: pointer;
+}/*# sourceMappingURL=Topsell.css.map */
