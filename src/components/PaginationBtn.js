@@ -1,12 +1,12 @@
 import React from 'react'
 import "../styles/paginationBtn.css"
-const PaginationBtn = () => {
+const PaginationBtn = ({ setPrevPage, setNextPage }) => {
   return (
     <>
       <div className="paginationIndexWrapper">
         <ul className="paginationIndex">
-          <li>Prev</li>
-          <li>Next</li>
+          <li onClick={() => setPrevPage()}>Prev</li>
+          <li onClick={() => setNextPage()}>Next</li>
         </ul>
 
       </div>

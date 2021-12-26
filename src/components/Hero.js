@@ -65,24 +65,24 @@ class Hero extends Component {
         }}
       >
 
-        <div class="slideholder1 holder" >
-          <div class="slider__main__slide">
-            <div class="slider__main__slide__image">
+        <div className="slideholder1 holder" >
+          <div className="slider__main__slide">
+            <div className="slider__main__slide__image">
               <img src="/images/asset 85.jpeg" alt="" srcSet="" />
 
             </div>
-            <div class="slider__main__slide__description">
-              <div class="title">
+            <div className="slider__main__slide__description">
+              <div className="title">
                 <h1>The Anatomical Basis of Clinical Practice </h1>
                 <small>by Henry Gray </small>
 
               </div>
-              <div class="rating">   <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i> <span class="rating__Amount">1304 </span></div>
-              <p class="detailText">
+              <div className="rating">   <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star-half-alt"></i> <span className="rating__Amount">1304 </span></div>
+              <p className="detailText">
                 In 1858, Drs. Henry Gray and Henry Vandyke Carter created a book for their surgical colleagues that
                 established an
                 enduring standard among anatomical texts. After more than 150 years of continuous publication, Gray’s
@@ -93,30 +93,30 @@ class Hero extends Component {
 
 
               </p>
-              <div class="addToCart">
+              <div className="addToCart">
                 Add to Cart
               </div>
             </div>
           </div>
         </div>
 
-        <div class="slideholder2 holder">
-          <div class="slider__main__slide">
-            <div class="slider__main__slide__image">
+        <div className="slideholder2 holder">
+          <div className="slider__main__slide">
+            <div className="slider__main__slide__image">
               <img src="/images/asset 1.jpeg" alt="" srcSet="" />
 
             </div>
-            <div class="slider__main__slide__description">
-              <div class="title">
+            <div className="slider__main__slide__description">
+              <div className="title">
                 <h1>System of Orthopaedics and trauma </h1>
                 <small>by Apley & Solomon's </small>
               </div>
-              <div class="rating">   <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i> <span class="rating__Amount">1518 </span></div>
-              <p class="detailText">
+              <div className="rating">   <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star-half-alt"></i> <span className="rating__Amount">1518 </span></div>
+              <p className="detailText">
                 Now in its Tenth Edition and in continuous publication since 1959, Apley & Solomon's System of
                 Orthopaedics and Trauma
                 is one of the world's leading textbooks of orthopaedic surgery. Relied upon by generations of
@@ -125,30 +125,30 @@ class Hero extends Component {
                 book remains true to the teaching principles of the late Alan Apley and his successor Professor Louis
                 Solomon.
               </p>
-              <div class="addToCart">
+              <div className="addToCart">
                 Add to Cart
               </div>
             </div>
           </div>
         </div>
 
-        <div class="slideholder3 holder">
-          <div class="slider__main__slide">
-            <div class="slider__main__slide__image">
-              <img src="/images/asset 8.jpeg" alt="" srcset="" />
+        <div className="slideholder3 holder">
+          <div className="slider__main__slide">
+            <div className="slider__main__slide__image">
+              <img src="/images/asset 8.jpeg" alt="" srcSet="" />
 
             </div>
-            <div class="slider__main__slide__description">
-              <div class="title">
+            <div className="slider__main__slide__description">
+              <div className="title">
                 <h1>The Merck Manual of Diagnosis and Therapy</h1>
                 <small>by Robert E. Porter </small>
               </div>
-              <div class="rating">   <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i> <span class="rating__Amount">630</span></div>
-              <p class="detailText">
+              <div className="rating">   <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star-half-alt"></i> <span className="rating__Amount">630</span></div>
+              <p className="detailText">
                 Back by popular demand! The world's most widely used medical reference is now in its 20th edition. The
                 Merck Manual of
                 Diagnosis and Therapy now in its 20th edition has been thoroughly updated and thoughtfully expanded with
@@ -157,7 +157,7 @@ class Hero extends Component {
                 tables, and numerous
                 new figures.
               </p>
-              <div class="addToCart">
+              <div className="addToCart">
                 Add to Cart
               </div>
             </div>
@@ -165,23 +165,23 @@ class Hero extends Component {
         </div>
 
 
-        <div class="slideholder4 holder">
-          <div class="slider__main__slide">
-            <div class="slider__main__slide__image">
+        <div className="slideholder4 holder">
+          <div className="slider__main__slide">
+            <div className="slider__main__slide__image">
               <img src="/images/asset 82.jpeg" alt="" srcSet="" />
 
             </div>
-            <div class="slider__main__slide__description">
-              <div class="title">
+            <div className="slider__main__slide__description">
+              <div className="title">
                 <h1>Inderbir Singh's Human Embryology</h1>
                 <small>V Subhadra Devi</small>
               </div>
-              <div class="rating">   <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i> <span class="rating__Amount">204 </span></div>
-              <p class="detailText">
+              <div className="rating">   <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star-half-alt"></i> <span className="rating__Amount">204 </span></div>
+              <p className="detailText">
                 Beginning with an overview of genetics, the female reproductive system, fertilisation, and early
                 development of the
                 embryo, the following sections each examine the development of a different embryonic system.
@@ -190,7 +190,7 @@ class Hero extends Component {
                 correlations are
                 highlighted in separate boxes to enhance learning.
               </p>
-              <div class="addToCart">
+              <div className="addToCart">
                 Add to Cart
               </div>
             </div>
@@ -198,23 +198,23 @@ class Hero extends Component {
         </div>
 
 
-        <div class="slideholder5 holder">
-          <div class="slider__main__slide">
-            <div class="slider__main__slide__image">
+        <div className="slideholder5 holder">
+          <div className="slider__main__slide">
+            <div className="slider__main__slide__image">
               <img src="/images/asset 62.jpeg" alt="" srcSet="" />
 
             </div>
-            <div class="slider__main__slide__description">
-              <div class="title">
+            <div className="slider__main__slide__description">
+              <div className="title">
                 <h1> Oxford Concise Medical Dictionary </h1>
                 <small>Edited by Elizabeth Martin </small>
               </div>
-              <div class="rating">   <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i> <span class="rating__Amount">2205 </span></div>
-              <p class="detailText">
+              <div className="rating">   <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star-half-alt"></i> <span className="rating__Amount">2205 </span></div>
+              <p className="detailText">
                 This best selling illustrated dictionary contains nearly 12,000 entries covering all aspect of medical
                 science
 
@@ -222,7 +222,7 @@ class Hero extends Component {
                 student of
                 medica science,those working in the medical and allied professions, and as home reference
               </p>
-              <div class="addToCart">
+              <div className="addToCart">
                 Add to Cart
               </div>
             </div>

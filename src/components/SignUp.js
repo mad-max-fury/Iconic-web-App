@@ -1,4 +1,6 @@
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom';
+import ReactDOM from 'react-dom';
 import "../styles/SignUp.css"
 const SignUp = () => {
   const handleContentLoaded = () => {
@@ -128,20 +130,20 @@ const SignUp = () => {
   };
 
   useEffect(() => {
-    console.log("using effect");
-    document.addEventListener("DOMContentLoaded", handleContentLoaded);
+
+    handleContentLoaded()
   }, []);
 
-  return (
+  return ReactDOM.createPortal(
     <>
 
       {/* <!--SIGN UP MODAL--> */}
-      <form class="signUp" id="signUp">
-        <span class="SignUpCloseBtn">&times;</span>
-        <div class="signUp__heading">
+      <form className="signUp" id="signUp">
+        <span className="SignUpCloseBtn">&times;</span>
+        <div className="signUp__heading">
           <h3>register</h3>
         </div>
-        <div class="signUp__formInput">
+        <div className="signUp__formInput">
           <input type="email" placeholder="Enter email" id="signUpEmail" />
           <input type="text" id="first_name" placeholder="First Name" />
           <input type="text" id="last_name" placeholder="last Name" />
@@ -150,25 +152,27 @@ const SignUp = () => {
           <input type="password" placeholder="Enter password" id="password" />
         </div>
 
-        <div class="signIns">
-          <div class="sign-up">
+        <div className="signIns">
+          <div className="sign-up">
             <a href="#" id="sign-up-btn">
               Sign Up
             </a>
           </div>
           <div>- OR -</div>
-          <div class="signUp__choices">
-            <div class="signUp__choices__google">
+          <div className="signUp__choices">
+            <div className="signUp__choices__google">
               <button> Sign Up google</button>
             </div>
           </div>
         </div>
         <p>By proceeding, you are agreeing to our <span><a href="#">Terms & condditions</a></span> and <span><a
           href="#">Privacy Policy</a></span></p>
-        <p>Already a user ? <span><a id="signInLink" href="#signIn">Sign In here</a></span></p>
+        <p>Already a user ? <span><Link id="signInLink" to="#signIn">Sign In here</Link></span></p>
 
       </form>
-    </>
+    </>,
+    document.getElementById("portal")
+
   )
 }
 

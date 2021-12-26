@@ -5,6 +5,7 @@ import MedicalWears from '../components/MedicalWears'
 import Topsell from '../components/Topsell'
 
 function MainPage() {
+
   return (
     <main style={{ height: "fit-content", width: "100%" }}>
       <Hero />

@@ -1,6 +1,7 @@
-// import React from 'react'
+import ReactDOM from 'react-dom';
 import { useEffect } from "react";
 import "../styles/SignIn.css"
+import { Link } from 'react-router-dom';
 
 const SignIn = () => {
 
@@ -56,18 +57,16 @@ const SignIn = () => {
   };
 
   useEffect(() => {
-    console.log("using effect");
-    document.addEventListener("DOMContentLoaded", handleContentLoaded);
+    handleContentLoaded()
   }, []);
 
 
 
-
-  return (
+  return ReactDOM.createPortal(
     <>
       {/* <!--SIGN IN MODAL--> */}
       <form className="signIn" id="signIn">
-        <span className="SignInCloseBtn"><a href="#">&times;</a></span>
+        <span className="SignInCloseBtn"><Link to="#">&times;</Link></span>
         <div className="signIn__heading">
           <h3>Sign In</h3>
         </div>
@@ -87,10 +86,11 @@ const SignIn = () => {
             continue with Google
           </a>
         </div>
-        <p>Don't have an account ? <span><a id="signUpPage" href="#signUp">Sign up here</a></span></p>
+        <p>Don't have an account ? <span><Link id="signUpPage" to="#signUp">Sign up here</Link></span></p>
 
       </form>
-    </>
+    </>,
+    document.getElementById("portal")
   )
 }
 
