@@ -6,10 +6,13 @@ import PaginationBtn from '../components/PaginationBtn'
 import "../styles/Products.css"
 const Products = (props) => {
   const [url, setUrl] = useState("http://iconic-med.herokuapp.com/api/v1/pag_products/")
-
+  // const [searchValue, setSearchValue] = useState(null)
   useEffect(() => {
-    props.handleProduct(url)
-  }, [url])
+    props.handleProduct(url, props.searchValue, props.category, props.minprice, props.maxprice)
+  }, [url, props.searchValue, props.category, props.minprice, props.maxprice])
+  // useEffect(() => {
+  //   alert(props.category)
+  // }, [])
 
   const [state, setState] = useState([])
   useEffect(() => {
@@ -62,7 +65,7 @@ const Products = (props) => {
     })
   }
 
-  console.log(prevPage, nextPage)
+  // console.log(prevPage, nextPage)
   return (
     <>
       <aside class="displaySearchResult" id="displaySearchResult">

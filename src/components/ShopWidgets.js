@@ -4,14 +4,14 @@ import Range from "./Range"
 
 import "../styles/ShopWidget.css"
 import Search from "./Search"
-const ShopWidgets = () => {
+const ShopWidgets = ({ setSearchValue, setCateValue, setMinPrice, setMaxPrice }) => {
   return (
     <>
       <aside className="filterItems">
-        <Search />
-        <Range />
+        <Search setSearchValue={setSearchValue} />
+        <Range setMinPrice={setMinPrice} setMaxPrice={setMaxPrice} />
 
-        <Category />
+        <Category setCateValue={setCateValue} />
 
       </aside>
 
