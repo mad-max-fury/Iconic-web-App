@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux'
+import landingPageReducer from './LandingPageReducer'
 
 import productReducer from './productReducer'
 
 export default combineReducers({
-  products: productReducer
+  products: productReducer,
+  landingPageProduct: landingPageReducer
 })

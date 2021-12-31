@@ -6,11 +6,12 @@ import Shop from "./Pages/Shop";
 import Cart from "./Pages/Cart";
 
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
 
 } from "react-router-dom";
+import ProductDetailsPage from "./Pages/ProductDetailsPage";
 // import Dashboard from "./Pages/Dashboard";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       </div>
     </Router>
     // <Dashboard />
+    // <ProductDetailsPage />
   );
 }
 

@@ -1,6 +1,6 @@
 import iconicWebApp from "../Api/iconicWebApp"
 const FETCH_PRODUCTS = 'FETCH_PRODUCTS'
-
+const FETCH_LANDING_PAGEITEMS = 'FETCH_LANDING_PAGEITEMS'
 
 export const handleProduct = (url, query, category, min_price, max_price) => async dispatch => {
   const response = await iconicWebApp({
@@ -19,4 +19,12 @@ export const handleProduct = (url, query, category, min_price, max_price) => asy
 }
 
 
-
+export const handleLandingPageProduct = (url) => async dispatch => {
+  const response = await iconicWebApp({
+    method: "GET", url: url
+  });
+  dispatch({
+    type: FETCH_LANDING_PAGEITEMS,
+    payload: response.data
+  })
+}

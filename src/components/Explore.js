@@ -1,6 +1,16 @@
 import React from 'react'
 import "../styles/Explore.css"
-const Explore = () => {
+const Explore = (props) => {
+  const renderProduct = (products) => {
+    return <>
+      <div className="explore__products__holder__product">
+        <img src={products.images[0]} alt="" srcSet="" />
+        <div className="seemore">
+          See More
+        </div>
+      </div>
+    </>
+  }
   return (
     <>
       {/* <!--EXPLORE --> */}
@@ -10,74 +20,29 @@ const Explore = () => {
         </div>
         <div className="explore__products__holder">
           <div className="explore__products__holder__wrapper">
-            <div className="explore__products__holder__product">
-              <img src="/images/asset 10.jpeg" alt="" srcSet="" />
-              <div className="seemore">
-                See More
-              </div>
-            </div>
-            <div className="explore__products__holder__product">
-              <img src="/images/asset 13.jpeg" alt="" srcSet="" />
-              <div className="seemore">
-                See More
-              </div>
-            </div>
+            {
+              props?.medicaltools?.slice(0, 2).map(renderProduct)
+            }
           </div>
           <div className="explore__products__holder__wrapper">
-            <div className="explore__products__holder__product">
-              <img src="/images/asset 15.jpeg" alt="" srcSet="" />
-              <div className="seemore">
-                See More
-              </div>
-            </div>
-            <div className="explore__products__holder__product">
-              <img src="/images/asset 44.jpeg" alt="" srcSet="" />
-              <div className="seemore">
-                See More
-              </div>
-            </div>
+            {
+              props?.medicaltools?.slice(2, 4).map(renderProduct)
+            }
           </div>
           <div className="explore__products__holder__wrapper">
-            <div className="explore__products__holder__product">
-              <img src="/images/asset 19.jpeg" alt="" srcSet="" />
-              <div className="seemore">
-                See More
-              </div>
-            </div>
-            <div className="explore__products__holder__product">
-              <img src="/images/asset 41.jpeg" alt="" srcSet="" />
-              <div className="seemore">
-                See More
-              </div>
-            </div>
+            {
+              props?.medicaltools?.slice(4, 6).map(renderProduct)
+            }
           </div>
           <div className="explore__products__holder__wrapper">
-            <div className="explore__products__holder__product">
-              <img src="/images/asset 70.jpeg" alt="" srcSet="" />
-              <div className="seemore">
-                See More
-              </div>
-            </div>
-            <div className="explore__products__holder__product">
-              <img src="/images/asset 57.jpeg" alt="" srcSet="" />
-              <div className="seemore">
-                See More
-              </div>
-            </div>
+            {
+              props?.medicaltools?.slice(6, 8).map(renderProduct)
+            }
           </div>
-          <div className="explore__products__holder__wrapper ">
-            <div className="explore__products__holder__product">
-              <img src="/images/asset 11.jpeg" alt="" srcSet="" />
-              <div className="seemore">
-                See More
-              </div>
-            </div>
-            <div className="explore__products__holder__product">
-              <img src="/images/asset 83.jpeg" alt="" srcSet="" />
-              <div className="seemore">
-                See More
-              </div>
-            </div>
+          <div className="explore__products__holder__wrapper">
+            {
+              props?.medicaltools?.slice(8, 10).map(renderProduct)
+            }
           </div>
         </div>
       </div>
